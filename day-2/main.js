@@ -28,4 +28,13 @@ console.log(think);
 
 //null
 const nullData=null;
-console.log(nullData)
+console.log(nullData);
+
+//object
+
+const person = {
+    firstName :"Bruce",
+    lastName:"Lee",
+    about:"Legend"
+
+}
