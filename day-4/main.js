@@ -21,3 +21,13 @@ typeof a;				// "undefined"
 
 a = { b: "c" };
 typeof a;				// "object"
+
+
+//SOME BUILD IN METHODS
+
+var a = "hello world";
+var b = 3.14159;
+
+a.length;				// 11
+a.toUpperCase();		// "HELLO WORLD"
+b.toFixed(2);			// "3.14"
