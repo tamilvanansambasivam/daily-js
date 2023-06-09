@@ -88,7 +88,7 @@ function person(fName,lName){
 }
 
 person.prototype.getFullName=function(){
-    return this.fName+" "+this.lName
+    console.log(this.fName+" "+this.lName);
 }
 
 
