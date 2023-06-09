@@ -87,13 +87,33 @@ function person(fName,lName){
 
 }
 
-person.prototype.getFullName=function(){
-    console.log(this.fName+" "+this.lName);
-}
+// person.prototype.getFullName=function(){
+//     console.log(this.fName+" "+this.lName);
+// }
 
 
-const p1= new person("Tony","Stark");
-const p2= new person("Bruce","Wayne");
+// const p1= new person("Tony","Stark");
+// const p2= new person("Bruce","Wayne");
+
+// p1.getFullName();
+// p2.getFullName();
+
+// function superHero(fName,lName){
+//     //this={}
+//     person.call(this,fName,lName);
+//     isSuperHero = true;
+
+// }
+
+// superHero.prototype.fightCrime=function(){
+//     console.log("fight against crime");
+// }
+
+// superHero.prototype=Object.create(person.prototype);
+// const batman = new superHero("Bruce","Wayne");
+// superHero.prototype.constructor=superHero;
+// batman.getFullName()
+
 
 // p1.getFullName=function(){
 //     console.log(this.fName+" "+this.lName);
@@ -104,6 +124,29 @@ const p2= new person("Bruce","Wayne");
 // }
 
 
-p1.getFullName();
-p2.getFullName();
 
+class PERSON {
+    constructor(fName,lName){
+        this.fName=fName;
+        this.lName=lName;
+    }
+    sayMyName(){
+        console.log(this.fName+" "+this.lName);
+
+    }
+}
+const person1 = new PERSON("jack","sparrow");
+person1.sayMyName();
+
+class superHero extends PERSON{
+    constructor(fName,lName){
+        super(fName,lName);
+        this.isSuperHero = true;
+    }
+    fightCrime(){
+        console.log("fight against crime");
+    }
+}
+const ironman = new superHero("Tony","Stark");
+
+ironman.sayMyName()
