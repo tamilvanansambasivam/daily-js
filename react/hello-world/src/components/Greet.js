@@ -4,18 +4,18 @@ import React from 'react';
 //     return <h1>Hello {props.name}</h1>
 // }
 
-const Greet=(props)=> {
-    
+const Greet = props => {
+    const { name, heroName, children } = props
     return (
         <div>
-           
+
             <h1>
-                <h1>Hello {props.name} a.k.a {props.heroName} !</h1>
+                <h1>Hello {name} a.k.a {heroName} !</h1>
             </h1>
-            {props.children}
+            {children}
 
         </div>
-   )
+    )
 }
 
 export default Greet;
