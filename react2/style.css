@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Literata:wght@300;400;500&family=Nanum+Myeongjo:wght@400;700&display=swap');
+
+body{
+
+text-align: center;
+font-family: sans-serif;
+color:rgb(0, 0, 0);
+font-family: 'Literata', serif;
+font-family: 'Nanum Myeongjo', serif;
+
+}
+.container{
+   
+
+    
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  border-radius: 30px;
+  
+
+}
+.body-class {
+    font-family: 'Literata', serif;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 21px;
+    font-weight: bold;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding:20px;
+    margin:20px;
+    border-radius:10px;
+    height: 400px;
+    width: 200px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.body-class .data img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+   
+}
+
+
+
+
+
+.footer{
+    width: fit-content;
+    font-size: 30px;
+    font-weight: bolder;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    padding: 20px;
+    margin: 20px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    
+}
+
+.body-class:hover{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
