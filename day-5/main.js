@@ -1,10 +1,19 @@
-function add(a){
-    return function(b){
-        return a+b;
-    }
+// Original function that takes three arguments
+function add(x, y, z) {
+  return x + y + z;
 }
 
-//currying
+// Curry the function
+function curryAdd(x) {
+  return function(y) {
+    return function(z) {
+      return x + y + z;
+    };
+  };
+}
 
-console.log(add(10)(20))
+// Usage of the curried function
+const curriedAdd = curryAdd(1)(2)(3);
+console.log(curriedAdd); // Output: 6
+
 
